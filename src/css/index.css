@@ -92,5 +92,45 @@
   background-color: #646cff;
   border: 1px solid transparent;
   border-radius: 1.25rem;
-  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+  transition:
+    color 0.25s,
+    border-color 0.25s,
+    background-color 0.25s;
+}
+
+.inex-body .back-link {
+  visibility: hidden;
+  pointer-events: none;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #e2e8f0, #bae6fd, #fbcfe8);
+}
+
+.index-main .main-title {
+  font-size: clamp(64px, 12vw, 180px);
+  font-weight: 900;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    45deg,
+    #0ea5e9,
+    #6366f1,
+    #a855f7,
+    #ec4899,
+    #0ea5e9
+  );
+
+  background-size: 300% 300%;
+  background-position: 0% 50%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  animation: gradientMove 4s ease-in-out infinite alternate;
 }

@@ -1,6 +1,25 @@
 .header {
   padding: 20px 0;
+  position: relative;
 }
+.header::after {
+  content: '';
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 0;
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #38bdf8,
+    #a855f7,
+    #ec4899,
+    transparent
+  );
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
