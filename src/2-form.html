@@ -10,7 +10,22 @@
 </head>
 
 <body class="form-body">
-  <load src="./partials/header.html" highlight-curr="active" />
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <load src="./partials/back-link.html" />
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link {=$highlight-act}" href="./1-gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {=$highlight-curr}" href="./2-form.html">Form</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <div class="container">
